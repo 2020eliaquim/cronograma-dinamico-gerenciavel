@@ -1,21 +1,28 @@
-const toggleBar = document.querySelector("#menu-icon");
 const hiddenAside = document.querySelector("aside");
 const iconArrowMenu = document.querySelector("#menu-icon-arrow");
 const iconBarwMenu = document.querySelector("#menu-icon");
 
-function hideBar() {
+function ShowHideBar() {
   if (hiddenAside.classList.contains("hide")) {
-    hiddenAside.classList.add("hide");
-    hiddenAside.classList.remove("hide");
-    // button show
-    iconBarwMenu.classList.add("hidden");
-    iconBarwMenu.classList.remove("show");
+    hiddenAside.classList.add('show');
+    hiddenAside.classList.remove('hide');
 
-    iconArrowMenu.classList.add("show");
-    iconArrowMenu.classList.remove("hidden");
+    iconBarwMenu.classList.remove('show');
+    iconBarwMenu.classList.add('hidden');
+
+    iconArrowMenu.classList.add('show');
+    iconArrowMenu.classList.remove('hidden');
   } else {
-    hiddenAside.classList.add("hide");
+    hiddenAside.classList.add('hide');
+    hiddenAside.classList.remove('show');
+
+    iconArrowMenu.classList.add('hidden');
+    iconArrowMenu.classList.remove('show');
+
+    iconBarwMenu.classList.add('show');
+    iconBarwMenu.classList.remove('hidden');
   }
 }
 
-toggleBar.addEventListener("click", hideBar);
+iconBarwMenu.addEventListener("click", ShowHideBar);
+iconArrowMenu.addEventListener("click", ShowHideBar);

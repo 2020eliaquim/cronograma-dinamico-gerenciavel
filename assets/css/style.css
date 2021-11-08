@@ -6,3 +6,68 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background:#dbdbdb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9e9d9d;
+    border-radius: 5px;
+}
+
+.container {
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.dashboard {
+    width: 730px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 0 1px 2px #333;
+    margin: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #c4c2c2;
+}
+
+.dashboard h2 {
+    background: #0288d1;
+    padding: 5px;
+    color: #fff;
+}
+
+.status {
+    display: flex;
+}
+
+.status-taskbar {
+    width: 400px;
+    height: 300px;
+}
+
+.status-taskbar .progress {
+    background: #fa1818;
+}
+
+.graph {
+    background: tomato;
+    width: 300px;
+}
+
+.footer-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
