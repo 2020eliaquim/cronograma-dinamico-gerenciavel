@@ -1,0 +1,110 @@
+header {
+  background-color: #193498;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0px 50px; */
+  padding-right: 30px;
+  padding-left: 50px;
+  height: 50px;
+  box-shadow: 0 0 3px #333;
+}
+
+/*--------------*/
+header .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .left #menu-icon {
+  position: absolute;
+  margin-right: 10px;
+  font-size: 22pt;
+  color: #fff;
+  cursor: pointer;
+  left: 10px;
+  top: 10px;
+}
+
+header .left h2 {
+  color: #fff;
+}
+
+header .left ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+header .left ul li a {
+  background: #193498;
+  padding: 5px 6px;
+  border: 1px solid #193498;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+header .left ul li a:hover {
+  background: #1597e5;
+  border: 1px solid #69dadb;
+}
+
+header .left ul li:nth-child(1) {
+  padding-left: 50px;
+}
+
+header .left ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*---------------*/
+header .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header .right input {
+  margin: 0px 10px;
+  padding: 0px 10px;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+header .right input:focus {
+  background: rgba(255, 255, 255, 1);
+}
+
+header .right ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.right .list li a {
+  padding: 10px 7px 2px 7px;
+  border: 1px solid #193498;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.list li a i {
+  font-size: 18pt;
+}
+
+header .right ul li a:hover {
+  background: #1597e5;
+  border: 1px solid #69dadb;
+}
+
+header .right ul li a {
+  color: #fff;
+  text-decoration: none;
+}
