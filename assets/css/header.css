@@ -108,3 +108,23 @@ header .right ul li a {
   color: #fff;
   text-decoration: none;
 }
+
+.account-options {
+  background: chocolate;
+  width: 200px;
+  padding: 10px;
+}
+
+.account-options ul {
+  list-style: none;
+}
+
+.account-options ul li {
+  background: cyan;
+  padding: 7px;
+  margin: 5px;
+}
+
+.account-options ul li a i{
+  padding-right: 5px;
+}

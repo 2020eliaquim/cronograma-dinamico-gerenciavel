@@ -17,11 +17,7 @@
     <header>
       <div class="left">
         <i class="bx bx-menu hide" id="menu-icon"></i>
-        <i
-          class="bx bx-left-arrow-alt hidden"
-          id="menu-icon-arrow"
-          class="hide"
-        ></i>
+        <i class="bx bx-left-arrow-alt hidden" id="menu-icon-arrow" class="hide"></i>
         <h2>CMD</h2>
         <ul>
           <li><a href="./assets/pages/progressive-bar/progressbar.html">Projeto</a></li>
@@ -69,7 +65,25 @@
       </div>
     </aside>
 
+    <div class="account-options">
+      <ul>
+        <li class="selected">
+          <a href="#"><i class='bx bx-cog'></i>Configurações</a>
+        </li>
+
+        <li class="selected">
+          <a href="#"><i class='bx bx-user'></i>Perfil</a>
+        </li>
+
+        <li class="selected">
+          <a href="#"><i class='bx bx-exit' ></i>Sair</a>
+        </li>
+      </ul>
+    </div>
+
     <main class="container">
+     
+      <!-- primeiro card com informações -->
       <div class="dashboard">
         <h2>Projeto: Produção de Café</h2>
         <div class="status">
@@ -84,68 +98,32 @@
           </div>
         </div>
         <div class="footer-status">
-          <h3>Ciclo: 02</h3>
+          <h3>Ciclo: 09</h3>
           <a href="#">Ver Completo</a>
         </div>
       </div>
-
+      
+      <!-- segundo card com informaçoes -->
       <div class="dashboard">
-        <h2>Projeto: Produção de Café</h2>
+        <h2>Projeto: Açucar</h2>
         <div class="status">
           <div class="tasks">
             <div class="statu-tasks">
-              <table class="status-taskbar">
-                <caption>Tarefas:</caption>
-                <tr>
-                  <th>Descrição</th>
-                  <th>Status em %</th>
-                </tr>
-                <tr>
-                  <td>Colheita</td>
-                  <td><div class="progress">85%</div></td>
-                </tr>
-                <tr>
-                  <td>Colheita</td>
-                  <td>85%</td>
-                </tr>
-                <tr>
-                  <td>Colheita</td>
-                  <td>85%</td>
-                </tr>
-                <tr>
-                  <td>Colheita</td>
-                  <td>85%</td>
-                </tr>
-                <tr>
-                  <td>Colheita</td>
-                  <td>85%</td>
-                </tr>
-                <tr>
-                  <td>Lavagem do Grão</td>
-                  <td>68%</td>
-                </tr>
-                <tr>
-                  <td>Torração</td>
-                  <td>31%</td>
-                </tr>
-                <tr>
-                  <td>Empacotamento</td>
-                  <td>01%</td>
-                </tr>
-              </table>
+              <canvas id="progress-bar1" width="410" height="300"></canvas>
             </div>
           </div>
 
           <div class="graph">
-            <h4>Grafico:</h4>
+            <canvas id="chartPie1" height="410"></canvas>
           </div>
         </div>
         <div class="footer-status">
-          <h3>Ciclo: 02</h3>
+          <h3>Ciclo: 14</h3>
           <a href="#">Ver Completo</a>
         </div>
       </div>
     </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
     <script src="./assets/js/sidebar.js"></script>
     <script src="./assets/js/chartview.js"></script>

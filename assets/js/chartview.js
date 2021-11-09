@@ -1,10 +1,13 @@
 const contextPie = document.getElementById('chartPie');
 const contextBar = document.getElementById('progress-bar');
 
+const contextPie1 = document.getElementById('chartPie1');
+const contextBar1 = document.getElementById('progress-bar1');
+
 const dataContent = {
     labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
     datasets: [{
-        label: 'My first dataset',
+        label: '',
         backgroundColor: [
             'blue',
             'red',
@@ -30,19 +33,9 @@ const dataContentBar = {
         'Entrega nos pontos de venda',
     ],
   datasets: [{
-    label: 'My First Dataset',
+    label: 'Tarefas em % de Conclusão',
     data: [65, 59, 80, 81, 56, 25, 63, 15, 88],
-    backgroundColor: [
-      'red',
-      'blue',
-      'green',
-      'yellow',
-      'silver',
-      'black',
-      'grey',
-      'violet',
-      'pink'
-    ]
+    backgroundColor: 'blue',
   }]
 }
 
@@ -56,9 +49,21 @@ const configBar = {
     data: dataContentBar,
     options: {
         indexAxis: 'y',
+        scales: {
+            x: {
+                ticks: {
+                    callback: function(value, index, values) {
+                        return value + "%";
+                    }
+                }
+            }
+        },
+        responsive: false,
     },
 }
 
 const ChartPie = new Chart(contextPie, config);
-
 const CharBar = new Chart(contextBar, configBar);
+
+const ChartPie1 = new Chart(contextPie1, config);
+const CharBar1 = new Chart(contextBar1, configBar);
