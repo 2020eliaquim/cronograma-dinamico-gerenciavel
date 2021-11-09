@@ -49,6 +49,8 @@
 
 .status {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .status-taskbar {
@@ -56,13 +58,21 @@
     height: 300px;
 }
 
+.status-taskbar h4 {
+    text-align: center;
+}
+
 .status-taskbar .progress {
     background: #fa1818;
 }
 
 .graph {
-    background: tomato;
     width: 300px;
+}
+
+.graph h4 {
+    text-align: center;
+    color: #333;
 }
 
 .footer-status {
@@ -70,4 +80,15 @@
     justify-content: space-between;
     align-items: center;
     height: 30px;
+    margin-top: 5px;
+}
+
+#chartPie {
+    margin-top: 10px;
+}
+
+#progress-bar {
+    margin-top: 10px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
