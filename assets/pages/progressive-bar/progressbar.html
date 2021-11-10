@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress Bar</title>
+    <title>CMD</title>
+    <link rel="stylesheet" href="./../../css/header.css" />
+    <link rel="stylesheet" href="./../../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/sidebar.css" />
     <style>
         .progress {
             --long-progress: 50;
@@ -23,13 +31,97 @@
             background-color: red; */
         }
         /*alterando o tamanho*/
+        .divisao {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 350px;
+          height: 100px;
+          background-color: #f00;
+          border-radius: 30px;
+          margin-left: 100px;
+        }
+
+        .divisao p {
+          font-size: 18pt;
+          color: #fff;
+          font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="left">
+          <i class="bx bx-menu hide" id="menu-icon"></i>
+          <i class="bx bx-left-arrow-alt hidden" id="menu-icon-arrow" class="hide"></i>
+          <h2>CMD</h2>
+          <ul>
+            <li><a href="./../../../index.html">Projeto</a></li>
+            <li><a href="#">Ciclo</a></li>
+          </ul>
+        </div>
+        
+        <div class="right">
+          <input type="search" name="search-input" id="search-input" />
+          <ul class="list">
+            <li><i class="bx bx-info-circle" class="icon-notification"></i></li>
+            <li><i class="bx bx-user-circle" class="icon-notification" id="icon-menu-account"></i>
+            </li>
+          </ul>
+        </div>
+      </header>
+  
+      <aside class="hide">
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="bx bxs-dashboard"></i
+                ><span>Painel de Projetos</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bx-bar-chart-square"></i><span>Cronograma</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-map-alt"></i><span>Projetos</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-refresh"></i><span>Ciclos</span></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+  
+      <div class="account-options">
+        <ul>
+          <li class="selected">
+            <a href="#"><i class='bx bx-cog'></i>Configurações</a>
+          </li>
+  
+          <li class="selected">
+            <a href="#"><i class='bx bx-user'></i>Perfil</a>
+          </li>
+  
+          <li class="selected">
+            <a href="#"><i class='bx bx-exit' ></i>Sair</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- tudo acima faz parte do navbar header -->
     <input type="range" min="0" max="100" step="1" value="50" id="range" />
     <div class="progress"></div>
     <br>
+    
     <a href="./../../../index.html">Home</a>
+
+    <!-- <p>teste do create element</p>
+    <div id="div1">div com id: div1</div> -->
+
 
     <script>
         const range = document.querySelector('#range'),
@@ -40,6 +132,36 @@
             const value = range.value;
             progressbar.style.setProperty('--long-progress', value)
         })
+
+        //tentando usar o createElement
+
+        //se for criar na raiz é necessário carregar a pagina primeiro
+        // document.body.onload = adcElemento;
+
+        // function adcElemento () {
+        //   var divNova = document.createElement("div");
+        //   var conteudoNovo = document.createTextNode("Olá, cumprimentos!");
+        //   divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
+
+        //   // adiciona o novo elemento criado e seu conteúdo ao DOM
+        //   var divAtual = document.getElementById("div1");
+        //   document.body.insertBefore(divNova, divAtual);
+        // }
+        var divAtual = document.getElementById("div1");
+
+        var divTeste = document.createElement('div');
+        divTeste.classList.add('divisao');
+        
+
+        var p = document.createElement('p');
+        p.textContent = 'Eliaquin Jordão de Araújo';
+        
+        divTeste.appendChild(p);
+
+        document.body.appendChild(divTeste);
+
     </script>
+    <script src="./../../js/sidebar.js"></script>
+    <script src="./../../js/account-options.js"></script>
 </body>
 </html>

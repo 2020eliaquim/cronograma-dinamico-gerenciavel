@@ -88,31 +88,36 @@ header .right ul li {
   list-style: none;
 }
 
-.right .list li a {
-  padding: 10px 7px 2px 7px;
+.right .list li {
   border: 1px solid #193498;
   border-radius: 5px;
   transition: 0.3s;
+  padding: 2px 6px;
+  cursor: pointer;
 }
 
-.list li a i {
+.list li i {
   font-size: 18pt;
+  vertical-align: middle;
 }
 
-header .right ul li a:hover {
+.right ul li:hover {
   background: #1597e5;
   border: 1px solid #69dadb;
 }
 
-header .right ul li a {
+.right ul li {
   color: #fff;
-  text-decoration: none;
 }
 
 .account-options {
-  background: chocolate;
+  background: #1597E5;
   width: 200px;
-  padding: 10px;
+  padding: 5px 5px;
+  position: absolute;  
+  right: 28px;
+  top: calc(50px - 6px);
+  display: none;
 }
 
 .account-options ul {
@@ -120,9 +125,25 @@ header .right ul li a {
 }
 
 .account-options ul li {
-  background: cyan;
   padding: 7px;
-  margin: 5px;
+  margin: 5px auto;
+  border-radius: 5px;
+  border: 1px solid #1597E5;
+}
+
+.account-options ul li:hover {
+  background: #113CFC;
+  border: 1px solid #69dadb;
+}
+
+.menu-account--show {
+  display: block;
+  opacity: 1;
+}
+
+.account-options ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .account-options ul li a i{
