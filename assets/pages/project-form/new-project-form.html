@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CMD</title>
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./../../css/header.css" />
+    <link rel="stylesheet" href="./../../css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./../../css/sidebar.css" />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
         <i class="bx bx-left-arrow-alt hidden" id="menu-icon-arrow" class="hide"></i>
         <h2>CMD</h2>
         <ul>
-          <li><a href="./assets/pages/project-form/new-project-form.html">Projeto</a></li>
+          <li><a href="./new-project-form.html">Projeto</a></li>
           <li><a href="#">Ciclo</a></li>
         </ul>
       </div>
@@ -42,7 +43,7 @@
       <div class="sidebar">
         <ul>
           <li>
-            <a href="#"
+            <a href="./../../../index.html"
               ><i class="bx bxs-dashboard"></i
               ><span>Painel de Projetos</span></a
             >
@@ -97,55 +98,13 @@
       <!-- aparece quando não há msg -->
       <!-- <img src="./assets/images/no found.svg" alt="no found"> -->
     </div>
-
     <!-- tudo acima faz parte do navbar header -->
+    
+    novo formulário de projetos    
 
-    <main class="container">
-     
-      <!-- primeiro card com informações -->
-      <div class="dashboard">
-        <h2>Projeto: Produção de Café</h2>
-        <div class="status">
-          <div class="tasks">
-            <div class="statu-tasks">
-              <canvas id="progress-bar" width="410" height="300"></canvas>
-            </div>
-          </div>
-
-          <div class="graph">
-            <canvas id="chartPie" height="410"></canvas>
-          </div>
-        </div>
-        <div class="footer-status">
-          <h3>Ciclo: 09</h3>
-          <a href="./assets/pages/view-full-graph/view-full-graph.html">Ver Completo</a>
-        </div>
-      </div>
-      
-      <!-- segundo card com informaçoes -->
-      <div class="dashboard">
-        <h2>Projeto: Açucar</h2>
-        <div class="status">
-          <div class="tasks">
-            <div class="statu-tasks">
-              <canvas id="progress-bar1" width="410" height="300"></canvas>
-            </div>
-          </div>
-
-          <div class="graph">
-            <canvas id="chartPie1" height="410"></canvas>
-          </div>
-        </div>
-        <div class="footer-status">
-          <h3>Ciclo: 14</h3>
-          <a href="./assets/pages/view-full-graph/view-full-graph.html">Ver Completo</a>
-        </div>
-      </div>
-    </main>
-
+    <!-- tudo abaixo é parte padrão do documento -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
-    <script src="./assets/js/sidebar.js"></script>
-    <script src="./assets/js/chartview.js"></script>
-    <script src="./assets/js/account-options.js"></script>
-  </body>
+    <script src="./../../js/sidebar.js"></script>
+    <script src="./../../js/account-options.js"></script>
+</body>
 </html>
