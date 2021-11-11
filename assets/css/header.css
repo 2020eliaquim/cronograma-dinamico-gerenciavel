@@ -3,7 +3,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0px 50px; */
   padding-right: 30px;
   padding-left: 50px;
   height: 50px;
@@ -11,13 +10,13 @@ header {
 }
 
 /*--------------*/
-header .left {
+.left {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-header .left #menu-icon {
+.left #menu-icon {
   position: absolute;
   margin-right: 10px;
   font-size: 22pt;
@@ -27,17 +26,17 @@ header .left #menu-icon {
   top: 10px;
 }
 
-header .left h2 {
+.left h2 {
   color: #fff;
 }
 
-header .left ul li {
+.left ul li {
   display: inline-block;
   list-style: none;
   margin: 0px 10px;
 }
 
-header .left ul li a {
+.left ul li a {
   background: #193498;
   padding: 5px 6px;
   border: 1px solid #193498;
@@ -45,45 +44,59 @@ header .left ul li a {
   transition: 0.3s;
 }
 
-header .left ul li a:hover {
+.left ul li a:hover {
   background: #1597e5;
   border: 1px solid #69dadb;
 }
 
-header .left ul li:nth-child(1) {
+.left ul li:nth-child(1) {
   padding-left: 50px;
 }
 
-header .left ul li a {
+.left ul li a {
   color: #fff;
   text-decoration: none;
 }
 
 /*---------------*/
-header .right {
+.right {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-header .right input {
-  margin: 0px 10px;
-  padding: 0px 10px;
-  height: 30px;
+.right .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
   width: 200px;
+  height: 30px;
   border-radius: 5px;
+  margin-right: 10px;
+  color: #5f5f5f;
+}
+
+.search-bar input {
+  height: 100%;
+  width: 100%;
   outline: none;
   border: none;
-  background: rgba(255, 255, 255, 0.5);
-  transition: 0.3s;
+  border-radius: 5px;
+  padding-right: 4px;
+  background: transparent;
+  color: #5f5f5f;
+  font-size: 11pt;
 }
 
-header .right input:focus {
-  background: rgba(255, 255, 255, 1);
+.right #search-icon {
+  font-size: 14pt;
+  padding: 0px 4px;
 }
 
-header .right ul li {
+
+.right ul li {
   display: inline-block;
   list-style: none;
 }
@@ -92,7 +105,7 @@ header .right ul li {
   border: 1px solid #193498;
   border-radius: 5px;
   transition: 0.3s;
-  padding: 2px 6px;
+  padding: 2px 3px;
   cursor: pointer;
 }
 
@@ -113,7 +126,7 @@ header .right ul li {
 .account-options {
   background: #ebebeb;
   border: 1px solid #acacac;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 200px;
   padding: 5px 5px;
   position: absolute;  
@@ -163,7 +176,7 @@ header .right ul li {
   height: 450px;
   position: absolute;
   right: 70px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: none;
 }
 
@@ -176,15 +189,24 @@ header .right ul li {
 }
 
 .information .msg-information {
-  background: #fff;
-  border: 1px solid #acacac;
+  border: 1px solid #ebebeb;
   font-size: 10pt;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 5px;
+}
+
+.information .msg-information:hover {
+  background: #fff;
+  border: 1px solid #acacac;
 }
 
 .information .msg-information a {
   text-decoration: none;
   color: #333;
+  font-weight: 500;
+}
+
+.information .msg-information a:hover {
+  color: #0000ff;
 }
