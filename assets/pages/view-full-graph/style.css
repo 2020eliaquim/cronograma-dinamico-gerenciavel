@@ -1,0 +1,16 @@
+.view-graphic-full {
+    display: flex;
+    background: cornflowerblue;
+    padding: 10px 10px;
+    height: calc(100vh - 50px);
+}
+
+.view-graphic-full .workspace {
+    background: chocolate;
+    width: 100%;
+}
+
+.view-graphic-full article {
+    background: chartreuse;
+    width: 30%;
+}
