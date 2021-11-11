@@ -111,7 +111,9 @@ header .right ul li {
 }
 
 .account-options {
-  background: #1597E5;
+  background: #ebebeb;
+  border: 1px solid #acacac;
+  border-radius: 10px;
   width: 200px;
   padding: 5px 5px;
   position: absolute;  
@@ -128,12 +130,12 @@ header .right ul li {
   padding: 7px;
   margin: 5px auto;
   border-radius: 5px;
-  border: 1px solid #1597E5;
+  border: 1px solid #ebebeb;
 }
 
 .account-options ul li:hover {
-  background: #113CFC;
-  border: 1px solid #69dadb;
+  background: #fff;
+  border: 1px solid #acacac;
 }
 
 .menu-account--show {
@@ -143,9 +145,46 @@ header .right ul li {
 
 .account-options ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
 }
 
 .account-options ul li a i{
   padding-right: 5px;
+}
+
+/*Notificação*/
+.information {
+  padding: 10px;
+  align-items: center;
+  background: #ebebeb;
+  border: 1px solid #acacac;
+  top: calc(50px - 6px);
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  right: 70px;
+  border-radius: 10px;
+  display: none;
+}
+
+.information--show {
+  display: block;
+}
+
+.information img {
+  width: 100px;
+}
+
+.information .msg-information {
+  background: #fff;
+  border: 1px solid #acacac;
+  font-size: 10pt;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.information .msg-information a {
+  text-decoration: none;
+  color: #333;
 }
