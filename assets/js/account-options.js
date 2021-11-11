@@ -7,7 +7,6 @@ const menuInfo = document.querySelector('.information');
 btnAccountMenu.addEventListener('click', ()=>{
     if(!menuAccount.classList.contains('menu-account--show')) {
         menuAccount.classList.add('menu-account--show');
-        return;
     } else {
         menuAccount.classList.remove('menu-account--show');
     }
@@ -17,7 +16,6 @@ btnAccountMenu.addEventListener('click', ()=>{
 btnInformation.addEventListener('click', ()=>{
     if(!menuInfo.classList.contains('information--show')) {
         menuInfo.classList.add('information--show');
-        return;
     } else {
         menuInfo.classList.remove('information--show');
     }
